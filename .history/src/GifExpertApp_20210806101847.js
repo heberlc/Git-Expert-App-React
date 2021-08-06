@@ -17,7 +17,7 @@ export const GifExpertApp = () => {
 
                 <AddCategory setCategories={setCategories} />
 
-                <ul className="list-disc list-inside">
+                <ul className="list-disc list-inside py-5">
                     {
                         categories.map(category => (
                             <GifGrid

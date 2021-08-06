@@ -1,7 +1,6 @@
 import { useState } from "react";
 
 import { AddCategory } from "./components/AddCategory";
-import { GifGrid } from "./components/GifGrid";
 
 export const GifExpertApp = () => {
 
@@ -17,13 +16,10 @@ export const GifExpertApp = () => {
 
                 <AddCategory setCategories={setCategories} />
 
-                <ul className="list-disc list-inside">
+                <ul className="list-decimal list-inside">
                     {
                         categories.map(category => (
-                            <GifGrid
-                                key={category}
-                                category={category}
-                            />
+                            <li key={category}>{category}</li>
                         ))
                     }
                 </ul>

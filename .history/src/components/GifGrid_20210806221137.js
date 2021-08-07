@@ -4,7 +4,9 @@ import { useFetchGifs } from "../hooks/useFetchGifs"
 
 export const GifGrid = ({ category }) => {
 
-    const { data: imgaes, loading } = useFetchGifs(category);
+    const { data, loading } = useFetchGifs(category);
+
+
 
     return (
         <>
@@ -12,10 +14,10 @@ export const GifGrid = ({ category }) => {
 
             {loading && <p>Loading</p>}
 
-            <div className=" mx-auto w-full md:container md:flex md:flex-wrap md:gap-5  p-4 ">
+            <div className=" mx-auto w-full md:container md:flex md:flex-wrap md:gap-5  p-4 md:bg-gray-200">
 
                 {
-                    imgaes.map(img => (
+                    data.map(img => (
                         <GifGridItem
                             key={img.id}
                             {...img}

@@ -6,6 +6,8 @@ export const GifGrid = ({ category }) => {
 
     const { data: imgaes, loading } = useFetchGifs(category);
 
+
+
     return (
         <>
             <h3 className="text-xl font-bold my-2 text-black">{category}</h3>

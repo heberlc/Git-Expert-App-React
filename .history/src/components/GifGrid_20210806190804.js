@@ -10,7 +10,7 @@ export const GifGrid = ({ category }) => {
     useEffect(() => {
         getGifs(category)
             .then(imgs => setImages(imgs));
-    }, [category]);
+    }, []);
 
 
     return (

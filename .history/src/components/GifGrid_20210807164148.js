@@ -8,9 +8,9 @@ export const GifGrid = ({ category }) => {
 
     return (
         <>
-
-            {loading && <p className="animate__animated animate__flash text-blue-500 text-xl italic">Loading ...</p>}
             <h3 className="animate__animated animate__fadeIn text-xl font-bold my-2 text-black">{category}</h3>
+
+            {loading && <p className="animate__animated animate__fadeIn text-blue-500 text-xl">Loading</p>}
 
             <div className=" mx-auto w-full md:container md:flex md:flex-wrap md:gap-5  p-4 ">
 

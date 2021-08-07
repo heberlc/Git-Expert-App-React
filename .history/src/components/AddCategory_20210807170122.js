@@ -29,7 +29,7 @@ export const AddCategory = ({ setCategories }) => {
                 value={inputValue}
                 onChange={handleInputChange}
             />
-            <button className="block border-4 border-gray-200 text-lg font-bold hover:border-gray-800 text-white bg-gray-800 hover:bg-white hover:text-gray-800 transition duration-500  py-3 px-6 mx-auto rounded-full">Buscar</button>
+            <button className="block border-2 border-gray-800 bg-blue-400 py-3 px-6 mx-auto rounded">Buscar</button>
         </form>
 
     )
